@@ -11,7 +11,8 @@ import InfoIcon from '@mui/icons-material/Info';
 const Menu = () => {
   return (
    //  <Box backgroundColor="yellowgreen" flex={1}>
-    <Box flex={1}>
+    <Box mt={2} flex={1} sx={{display:{xs:'none',sm:'block'}}} >
+      <Box position='fixed'>
     <List>
           <ListItem disablePadding>
             <ListItemButton>
@@ -77,6 +78,7 @@ const Menu = () => {
           </ListItem>
           
       </List>
+      </Box>
       </Box>
   )
 }
